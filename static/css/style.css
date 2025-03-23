@@ -1,0 +1,55 @@
+.discount {
+  background-color: #eee;
+  color: #333;
+  position: relative;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+.discount h1 {
+  font-size: 5rem;
+  color: #3333335a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.section-heading {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card .buttons {
+  width: 100%;
+  position: absolute;
+  top: 40vh;
+  left: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.card:hover .buttons {
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.card img {
+  transition: all 0.5s ease-in;
+}
+.card img:hover {
+  scale: 1.03;
+}
+
+.cart-header {
+  background: url("/static/img/camera/pexels-tirachard-kumtanom-112571-733853.jpg")
+    center bottom;
+  background-size: cover;
+  height: 45vh;
+  padding-top: 20vh;
+}
